@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<meta charset="utf-8">
+<head>
+<title>DSI WEBSITE EXPERIMENT</title>
+
+<script>
+function changeImage() {
+    imgRM = document.getElementById('RM')
+    imgRM.style.display = "block"
+}
+
+</script>
+</head>
+<link rel="stylesheet" media="screen" href="inclass_webpage/inclass_style.css">
+<body>
+
+<h1>Dad Jokes:</h1>
+<p>Do you know the one about the slice of pizza?</p>
+<p>Nevermind. It's too cheesy.</p>
+<br/>
+<p>Do you know the one about the pencil?</p>
+<p>Forget it. It has no point.</p>
+<br/>
+
+<button type="button"
+onclick="changeImage()">Change</button>
+
+<div id="photos">
+<img id="RF" src="inclass_webpage/R_and_F.JPG"
+alt="R and F are an odd couple"
+style="width:480px; height:480px; transform:rotate(90deg)" />
+
+<br/>
+
+<img id="RM" src="R_and_M.JPG" 
+alt="Dad and daughter laughing at the hilarious jokes"
+style="width:480px; height:480px; transform:rotate(90deg); display:none" />
+</div>
+
+</body>
+</html>
